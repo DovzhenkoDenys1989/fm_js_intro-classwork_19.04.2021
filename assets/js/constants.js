@@ -7,3 +7,6 @@ const NATIONALITIES = [
   'gr',
   'ru',
 ]
+const ENG_VOWELS = "aeoiuy";
+const RUS_VOWELS = "аоузыиюяе";
+const VOWELS = `${ENG_VOWELS}${RUS_VOWELS}`;

@@ -74,7 +74,6 @@ function checkSequence(str, optinons) {
 
 
   for (const symbol of str) {
-    debugger;
     /* 1. Определить открывающуюся скобку. Запушить в стек */
     if(braces[symbol]){
       stack.push(symbol);

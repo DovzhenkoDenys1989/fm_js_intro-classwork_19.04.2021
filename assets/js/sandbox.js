@@ -15,3 +15,35 @@ const nums2 = [1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 0, 0];
 // Создать массив, содержащий уникальные элементы из предыдущих массивов
 
 const unique = [...new Set([...nums1, ...nums2])];
+
+const monitor = {
+  sizes: {
+    height: {
+      value: 20,
+      scale: "cm",
+    },
+    width: {
+      value: 56.5,
+      scale: "cm",
+    },
+  },
+  model: "Samsung",
+  brightness: 200,
+  contrast: 100,
+  color: "black",
+  dpi: 250,
+  resolution: "4K",
+};
+
+console.log(monitor.sizes.height.value);
+
+function getDiagonal(monitor) {
+  monitor.sizes.height.value;
+  monitor.sizes.width.value;
+}
+
+//const monitorBright = monitor.brightness;
+
+const { brightness, dpi, color } = monitor;
+
+console.log(brightness, dpi, color);

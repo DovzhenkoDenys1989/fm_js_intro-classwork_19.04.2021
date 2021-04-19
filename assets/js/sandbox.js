@@ -44,6 +44,42 @@ function getDiagonal(monitor) {
 
 //const monitorBright = monitor.brightness;
 
+/*
+  Из brightness, dpi, color получите константы с названиями
+  monitorBrightness, monitorDpi, monitorColor
+*/
+
+const {
+  brightness: monitorBrightness,
+  dpi: monitorDpi,
+  color: monitorColor,
+} = monitor;
+
 const { brightness, dpi, color } = monitor;
 
 console.log(brightness, dpi, color);
+
+/*
+BAD
+const { sizes } = monitor;
+const { height, width } = sizes;
+const { value } = height;
+*/
+
+// Получить widthScale, hightScale
+const {
+  sizes: {
+    height: { 
+      value: hightValue, 
+      scale: hightScale,
+    },
+    width: { 
+      value: widthValue, 
+      scale: widthScale,
+    },
+  },
+} = monitor;
+
+console.log(`Hight: ${hightValue}, Width: ${widthValue}`);
+
+console.log(monitor);
